@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_페이즈.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.player-name').addEventListener('click', function () {
+                window.history.back(); // 이전 페이지로 돌아가기
+            });
+        });
+    </script>
+</head>
+<body>
+    <img class="bg" src="img/페이즈_배경.png" alt="Background">
+    
+    <div class="container">
+        <!-- Introduction 제목 -->
+        <div class="Introduction">
+            BOT Peyz.99
+        </div>
+        
+        <!-- Introduction 설명 -->
+        <div class="Introduction1">
+            <img class="player-name" src="img/페이즈1_이름.png" alt="페이즈 이름 이미지">
+            <div class="name">김수환</div>
+            <div class="age">2005년 12월 5일 (18세)</div>
+            <div class="born">전라남도</div>
+            <div class="Body">178cm B형</div>
+            <div class="mbti">ISTP</div>
+            <div class="Debut">2021년 12월 10일</div>
+        </div>
+    </div>
+</body>
+</html>

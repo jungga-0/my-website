@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_쵸비.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.player-name').addEventListener('click', function () {
+                window.history.back(); // 이전 페이지로 돌아가기
+            });
+        });
+    </script>
+</head>
+<body>
+    <img class="bg" src="img/쵸비_배경.png" alt="Background">
+    
+    <div class="container">
+        <!-- Introduction 제목 -->
+        <div class="Introduction">
+            MID Chovy.03
+        </div>
+        
+        <!-- Introduction 설명 -->
+        <div class="Introduction1">
+            <img class="player-name" src="img/쵸비1_이름.png" alt="쵸비 이름 이미지">
+            <div class="name">정지훈</div>
+            <div class="age">2001년 3월 3일 (23세)</div>
+            <div class="born">인천광역시</div>
+            <div class="Body">185cm O형</div>
+            <div class="mbti">ISTJ</div>
+            <div class="Debut">2018년 3월 8일</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    margin: 0; /* 기본 여백 제거 */
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+    background-color: black;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+.bg {
+    position: absolute; /* 이미지의 절대 위치 설정 */
+    top: 50%; /* 화면 중앙으로 배치 */
+    left: 50%;
+    width: 100vw; /* 화면 너비에 맞추기 */
+    height: 100vh; /* 화면 높이에 맞추기 */
+    object-fit: contain; /* 비율을 유지하며 화면에 꽉 차게 */
+    transform: translate(-50%, -50%); /* 이미지가 정확히 화면 중앙에 오도록 */
+    z-index: -1; /* 배경 이미지가 다른 콘텐츠 뒤로 가도록 */
+}
+
+/* 콘텐츠 중앙 배치 (약간 왼쪽으로 이동) */
+.container {
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+    align-items: flex-end; /* 우측 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    text-align: left; /* 텍스트 좌측 정렬 */
+    position: relative;
+    width: 60%; /* 콘텐츠 너비 */
+    max-width: 800px; /* 최대 너비 */
+    margin-right: -5%; /* 우측으로 약간 더 이동 */
+    z-index: 10; /* 배경보다 위에 표시 */
+}
+
+/* Introduction 제목 스타일 */
+.Introduction {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 5vw; /* 반응형 텍스트 크기 */
+    margin: 0 0 1rem 0; /* 아래쪽 간격 추가 */
+    line-height: 1.2; /* 줄 높이 */
+}
+
+/* Introduction1 설명 텍스트 */
+.Introduction1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.2vw; /* 반응형 텍스트 크기 */
+    opacity: 0.8; /* 약간의 투명도 */
+    line-height: 1.5; /* 텍스트 간격 */
+}
+
+/* 각 정보의 스타일 */
+.Introduction1 > div {
+    margin: 0.5rem 0; /* 요소 간격 */
+}
+
+.Introduction1 .player-name {
+    width: 13vw; /* 이미지 크기 조정 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 0%; /* 아래로 이동 */
+    right: 92%; /* 오른쪽으로 이동 */
+    transition: transform 0.3s ease-in-out; /* 호버 애니메이션 */
+    cursor: pointer; /* 클릭 가능한 포인터 */
+    z-index: 10; /* 클릭한 요소가 위에 표시되도록 설정 */
+}
+
+/* 호버 효과 */
+.Introduction1 .player-name:hover {
+    transform: scale(1.5); /* 크기 확대 */
+}
+
+
+/* 클릭 시 이전 페이지로 이동 */
+.Introduction1 .player-name {
+    cursor: pointer; /* 클릭 가능 포인터 */
+    z-index: 10; /* 클릭한 요소가 위에 표시되도록 설정 */
+}
+
+@font-face {
+    font-family: 'KCCMurukmuruk(웹,모바일용)'; /* 폰트 이름 */
+    src: url('img/KCCMurukmuruk(웹,모바일용).woff') format('woff'); /* 폰트 파일 경로 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 폰트를 적용할 HTML 요소 스타일 */
+body {
+    font-family: 'KCCMurukmuruk(웹,모바일용)', sans-serif; /* 기본 폰트로 설정 */
+}
+
+.Introduction, .Introduction1 .name, .age, .born, .Body, .mbti, .Debut {
+    font-family: 'KCCMurukmuruk(웹,모바일용)', sans-serif; /* 폰트를 특정 요소에 적용 */
+}

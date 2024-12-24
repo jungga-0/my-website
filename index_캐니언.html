@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_캐니언.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.player-name').addEventListener('click', function () {
+                window.history.back(); // 이전 페이지로 돌아가기
+            });
+        });
+    </script>
+</head>
+<body>
+    <img class="bg" src="img/캐니언_배경.png" alt="Background">
+    
+    <div class="container">
+        <!-- Introduction 제목 -->
+        <div class="Introduction">
+            JGL Canyon.24
+        </div>
+        
+        <!-- Introduction 설명 -->
+        <div class="Introduction1">
+            <img class="player-name" src="img/캐니언_이름.png" alt="캐니언 이름 이미지">
+            <div class="name">김건부</div>
+            <div class="age">2001년 6월 18일 (23세)</div>
+            <div class="born">부산광역시</div>
+            <div class="Body">179cm A형</div>
+            <div class="mbti">INTJ</div>
+            <div class="Debut">2018년 12월 20일</div>
+        </div>
+    </div>
+</body>
+</html>

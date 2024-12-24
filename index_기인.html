@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_기인.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.player-name').addEventListener('click', function () {
+                window.history.back(); // 이전 페이지로 돌아가기
+            });
+        });
+    </script>
+    
+    
+</head>
+<body>
+    <img class="bg" src="img/기인_배경.png" alt="Background">
+    
+    <div class="container">
+        <!-- Introduction 제목 -->
+        <div class="Introduction">
+            TOP Kiin.71
+        </div>
+        
+        <!-- Introduction 설명 -->
+        <div class="Introduction1">
+            <img class="player-name" src="img/기인_이름.png" alt="기인 이름 이미지">
+            <div class="name">김기인</div>
+            <div class="age">1999년 5월 28일 (25세)</div>
+            <div class="born">서울특별시</div>
+            <div class="Body">167cm A형</div>
+            <div class="mbti">ISTP</div>
+            <div class="Debut">2017년 7월 2일</div>
+        </div>
+    </div>
+</body>
+</html>
